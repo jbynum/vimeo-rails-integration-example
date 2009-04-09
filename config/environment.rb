@@ -75,8 +75,8 @@ Rails::Initializer.run do |config|
   config.gem "jwbynum-vimeo", :lib => "vimeo"
   config.gem "curb"
   config.gem "json"
-  API_KEY = "a767a228901af2f9b35a76d2a60b619f"
-  SECRET_KEY = "e33aa54c0"
+  API_KEY = "your API Key"
+  SECRET_KEY = "your Secret"
   
   
 end
