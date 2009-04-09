@@ -1,0 +1,26 @@
+<h1>New video</h1>
+
+<% form_for :video, @video, :url => {:action => "create"}, :html => {:multipart => true} do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.label :embed %><br />
+    <%= f.text_area :embed %>
+  </p>
+  <p>
+	<%= file_field_tag :file %>
+  </p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', videos_path %>
